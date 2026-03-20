@@ -1,0 +1,46 @@
+definition:
+  id: project-green
+  name: "Project Green"
+  purpose: >
+    Mike's startup — building an AI-powered digital twin platform for accounting
+    firms. This domain will mirror a Fortune 100 enterprise with a full CEO Agent
+    and complete organizational hierarchy. The flagship domain of the Mike Life
+    framework and the most complex deployment.
+  priority: critical
+  maturity: founding
+
+leadership:
+  domain_leader: pg-board-chair
+  council_representative: pg-board-chair
+  executive_team:
+    - pg-ceo
+
+structure:
+  divisions: []  # To be built: Engineering, Product, Sales/GTM, Operations, Legal, Finance
+  teams: []
+  committees: []  # To be built: Audit, Strategy, Compensation
+  org_chart_path: "domains/project-green/org-chart.md"
+
+operations:
+  council_reporting_cadence: "weekly"
+  strategic_plan: ""
+  key_objectives:
+    - "Define and validate minimum viable product"
+    - "Build full enterprise agent hierarchy"
+    - "Develop go-to-market strategy"
+    - "Manage CTO relationship and development team"
+  key_metrics:
+    - "MVP progress"
+    - "Revenue pipeline"
+    - "Team development"
+
+config:
+  base_path: "domains/project-green/"
+  agent_manifest_path: "domains/project-green/agents/manifest.csv"
+  memory_path: "domains/project-green/memory/"
+  output_path: "domains/project-green/output/"
+
+metadata:
+  status: active
+  founded: 2026-03-17
+  last_modified: 2026-03-17

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Project Green — Business Model Canvas</title>
+<style>
+  @page { size: landscape; margin: 0.3in; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-size: 7.5pt;
+    line-height: 1.3;
+    color: #1a1a1a;
+    background: #fff;
+    width: 11in;
+    height: 8.5in;
+    padding: 0.3in;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    text-align: center;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #1a1a1a;
+    margin-bottom: 6px;
+  }
+  .header h1 { font-size: 14pt; font-weight: 700; letter-spacing: 0.5px; }
+  .header .sub { font-size: 8pt; color: #555; margin-top: 2px; }
+  .canvas {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.7fr;
+    gap: 4px;
+  }
+  .block {
+    border: 1.5px solid #333;
+    padding: 5px 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .block h2 {
+    font-size: 7.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    background: #2c3e50;
+    margin: -5px -6px 4px -6px;
+    padding: 3px 6px;
+  }
+  .block ul { padding-left: 12px; margin: 0; }
+  .block li { margin-bottom: 1.5px; }
+  .block p { margin-bottom: 3px; }
+  .label { font-weight: 700; color: #2c3e50; }
+  .small { font-size: 6.5pt; color: #555; }
+  .highlight { font-weight: 700; }
+
+  /* Grid positions */
+  .key-partners { grid-column: 1; grid-row: 1 / 3; }
+  .key-activities { grid-column: 2; grid-row: 1; }
+  .key-resources { grid-column: 2; grid-row: 2; }
+  .value-props { grid-column: 3; grid-row: 1 / 3; }
+  .cust-relationships { grid-column: 4; grid-row: 1; }
+  .channels { grid-column: 4; grid-row: 2; }
+  .cust-segments { grid-column: 5; grid-row: 1 / 3; }
+  .cost-structure { grid-column: 1 / 3; grid-row: 3; }
+  .revenue-stream { grid-column: 4 / 6; grid-row: 3; }
+
+  .footer {
+    text-align: center;
+    font-size: 6.5pt;
+    color: #888;
+    padding-top: 4px;
+    border-top: 1px solid #ccc;
+    margin-top: 4px;
+  }
+
+  table.mini { width: 100%; border-collapse: collapse; font-size: 6.5pt; margin-top: 3px; }
+  table.mini th { background: #ecf0f1; font-weight: 700; text-align: left; padding: 1.5px 3px; border: 0.5px solid #bbb; }
+  table.mini td { padding: 1.5px 3px; border: 0.5px solid #ddd; }
+
+  @media print {
+    body { width: 11in; height: 8.5in; }
+    .block { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Project Green &mdash; Business Model Canvas</h1>
+  <div class="sub">Team: Project Green &nbsp;|&nbsp; Date: March 19, 2026 &nbsp;|&nbsp; Segment: Professional Service Firms ($200K&ndash;$5B+)</div>
+</div>
+
+<div class="canvas">
+
+  <!-- KEY PARTNERS -->
+  <div class="block key-partners">
+    <h2>Key Partners</h2>
+    <p class="label">Technology</p>
+    <ul>
+      <li><span class="highlight">Microsoft</span> &mdash; Azure, M365 Agents SDK (Teams)</li>
+      <li><span class="highlight">GL/ERP vendors</span> &mdash; NetSuite, Sage, QBO, Xero (vendor-agnostic)</li>
+      <li><span class="highlight">Payroll/HCM</span> &mdash; ADP, Workday, Gusto, Paychex</li>
+      <li><span class="highlight">LLM providers</span> &mdash; OpenAI, Anthropic, Google (multi-provider routing)</li>
+    </ul>
+    <p class="label" style="margin-top:4px;">Distribution</p>
+    <ul>
+      <li><span class="highlight">PE operating partners</span> &mdash; 1 relationship = 5-20 firm deployments</li>
+      <li><span class="highlight">Management consultants</span> &mdash; Deloitte, McKinsey</li>
+      <li><span class="highlight">Tech consultants</span> &mdash; Boomer, Woodard, CPA.com</li>
+    </ul>
+    <p class="small" style="margin-top:4px;">No partner develops our product. We own all IP. Architecture is vendor-agnostic by design.</p>
+  </div>
+
+  <!-- KEY ACTIVITIES -->
+  <div class="block key-activities">
+    <h2>Key Activities</h2>
+    <ul>
+      <li><span class="highlight">Multi-agent AI orchestration</span> on financial data</li>
+      <li><span class="highlight">Vendor-agnostic data normalization</span> &mdash; any GL, any payroll &rarr; unified schema</li>
+      <li><span class="highlight">Operational knowledge capture</span> &amp; standardization across offices</li>
+    </ul>
+    <p style="margin-top:4px;"><span class="label">Build:</span> Agent orchestration, data schema, knowledge capture</p>
+    <p><span class="label">Buy:</span> Auth, cloud, databases, LLM inference</p>
+    <p><span class="label">Model:</span> Services-plus-software. Same product every tier. Delivery scales.</p>
+  </div>
+
+  <!-- KEY RESOURCES -->
+  <div class="block key-resources">
+    <h2>Key Resources</h2>
+    <p><span class="label">People:</span> Mike (18yr accountant/founder), Owen (CTO, 12yr collaboration), 6 advisors</p>
+    <p><span class="label">Tech:</span> Scales from DuckDB &rarr; Databricks. Same architecture, tiered infrastructure.</p>
+    <p><span class="label">IP:</span> Orchestration engine, vendor-agnostic schema, cross-firm benchmarking data</p>
+    <p><span class="label">Runway:</span> Bootstrap $300-400/mo. Seed trigger: traction exceeding team capacity.</p>
+  </div>
+
+  <!-- VALUE PROPOSITIONS -->
+  <div class="block value-props">
+    <h2>Value Propositions</h2>
+    <p class="label">1. Operational Intelligence</p>
+    <p>One firm: recover partner capacity. PE portfolio: standardize operations across 20 acquired practices. Same product, multiplying value.</p>
+    <p class="label" style="margin-top:4px;">2. Vendor-Agnostic Data Unification</p>
+    <p>No product connects QBO + Gusto + SharePoint + NetSuite + Sage into one queryable layer. We do. The harder to integrate, the wider the moat.</p>
+    <p class="label" style="margin-top:4px;">3. Institutional Knowledge Capture</p>
+    <p>75% of CPAs retiring. Knowledge walks out the door. AI captures it passively. Across a portfolio, becomes the standardization engine.</p>
+    <p class="small" style="margin-top:6px;"><span class="label">Threshold:</span> Emerging: better than asking Dave. Enterprise: better than flying in consultants for 6 months.</p>
+  </div>
+
+  <!-- CUSTOMER RELATIONSHIPS -->
+  <div class="block cust-relationships">
+    <h2>Customer Relationships</h2>
+    <p class="label">Discovery by tier:</p>
+    <ul>
+      <li><span class="highlight">$5B / PE:</span> PE networks, management consultants, analyst coverage</li>
+      <li><span class="highlight">Mid-market:</span> Peer circles, CPA societies, publications</li>
+      <li><span class="highlight">Emerging:</span> Peer referrals, LinkedIn, ProAdvisors</li>
+      <li><span class="highlight">All:</span> Bottom-up staff advocacy</li>
+    </ul>
+    <p class="label" style="margin-top:4px;">Retention:</p>
+    <ul>
+      <li>Data accumulation = switching costs</li>
+      <li>Cross-firm benchmarking (portfolio value)</li>
+      <li>Integration depth</li>
+      <li>Human services relationship</li>
+    </ul>
+  </div>
+
+  <!-- CHANNELS -->
+  <div class="block channels">
+    <h2>Channels</h2>
+    <ul>
+      <li>Founder-led direct sales (Phase 1)</li>
+      <li>Customer referrals (Phase 2)</li>
+      <li>PE operating partner relationships (Phase 2-3)</li>
+      <li>Consulting partnerships (Phase 3)</li>
+      <li>AICPA, state CPA societies, conferences</li>
+      <li>LinkedIn + thought leadership</li>
+      <li>Microsoft Teams (product delivery)</li>
+    </ul>
+    <p class="small" style="margin-top:4px;">Each phase funds and enables the next.</p>
+  </div>
+
+  <!-- CUSTOMER SEGMENTS -->
+  <div class="block cust-segments">
+    <h2>Customer Segments</h2>
+    <p class="label">Anchor: PE-Backed ($100M-$5B+)</p>
+    <p>Operational standardization, exit readiness, margin optimization, cross-portfolio benchmarking.</p>
+    <p class="small">Buyer: COO, PE Operating Partner</p>
+
+    <p class="label" style="margin-top:4px;">Growth: Mid-Market ($5M-$100M)</p>
+    <p>Cross-practice coordination, compliance-to-advisory, succession planning.</p>
+    <p class="small">Buyer: Managing Partner, Committee</p>
+
+    <p class="label" style="margin-top:4px;">Beachhead: Emerging ($200K-$5M)</p>
+    <p>Partner bottleneck, knowledge loss, CPA shortage. Fastest to deploy.</p>
+    <p class="small">Buyer: Managing Partner</p>
+
+    <p class="label" style="margin-top:4px;">Adjacent: Outsourced/Virtual</p>
+    <p>Margin pressure, high data density per deployment.</p>
+    <p class="small">Buyer: Firm owner</p>
+  </div>
+
+  <!-- COST STRUCTURE -->
+  <div class="block cost-structure">
+    <h2>Cost Structure</h2>
+    <table class="mini">
+      <tr><th></th><th>Emerging</th><th>Mid-Market</th><th>Enterprise / PE</th></tr>
+      <tr><td class="label">Infra/firm</td><td>~$50/mo</td><td>~$350/mo</td><td>$2K-$10K/mo</td></tr>
+      <tr><td class="label">Human time</td><td>$600-$1.2K/mo</td><td>$1K-$3K/mo</td><td>$5K-$15K/mo</td></tr>
+      <tr><td class="label">CAC</td><td>$5K-$10K</td><td>$15K-$30K</td><td>$50K-$100K</td></tr>
+    </table>
+    <p style="margin-top:4px;"><span class="label">Gross margins:</span> 86-98%. <span class="label">Constraint:</span> Human time early &mdash; capital unlocks it.</p>
+  </div>
+
+  <!-- VALUE PROPS spans into row 3, col 3 is empty in the traditional BMC -->
+
+  <!-- REVENUE STREAM -->
+  <div class="block revenue-stream">
+    <h2>Revenue Stream</h2>
+    <table class="mini">
+      <tr><th></th><th>Emerging</th><th>Mid-Market</th><th>Enterprise / PE</th></tr>
+      <tr><td class="label">Deploy</td><td>$5K-$15K</td><td>$15K-$50K</td><td>$50K-$200K</td></tr>
+      <tr><td class="label">Platform</td><td>$1.5K-$3K/mo</td><td>$3K-$6K/mo</td><td>$10K-$40K/mo</td></tr>
+      <tr><td class="label">Services</td><td>$1K-$2K/mo</td><td>$2K-$5K/mo</td><td>$5K-$15K/mo</td></tr>
+      <tr><td class="label">ACV</td><td>$18K-$40K</td><td>$50K-$120K</td><td>$200K-$500K+</td></tr>
+    </table>
+    <p style="margin-top:4px;"><span class="label">Comparables:</span> Karbon $35-53K. Managed IT $42-60K. Deloitte $300-500K.</p>
+    <p><span class="label">Expansion:</span> Dual-license to firm clients &rarr; $200K ACV becomes multi-million.</p>
+  </div>
+
+</div>
+
+<div class="footer">
+  This canvas is a hypothesis. I-Corps customer discovery (20+ interviews) will validate or invalidate every assumption above. &nbsp;|&nbsp; Project Green &copy; 2026
+</div>
+
+</body>
+</html>

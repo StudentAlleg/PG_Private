@@ -1,0 +1,58 @@
+Project Green NDA — v4 Analysis
+TL;DR: This is a well-done v4. Mike accepted all 8 of your v3 redlines without modification and added 35 improvements, most of which genuinely benefit both parties. It's close to signable. A few items need your attention first.
+
+✅ What Mike Did Right (for You)
+§1.7 Residual Knowledge — Protects your general professional knowledge from being claimed as CI. Tightly scoped (doesn't cover specific CI), good clause.
+
+§1.8 General Strategic Advice — Your advisory advice can't be claimed as Company IP or CI. This protects your ability to advise others in adjacent spaces.
+
+§2.9 Scope of Disclosure — Prevents the "firehose" tactic where they add you to every Discord channel and then claim everything you passively saw is CI. This is an important win.
+
+§3.9 Advisor Work Product — Your board advice belongs to you, not the Company. You can give similar advice to others as long as you don't reveal their specific CI. Critical clause.
+
+§3.6 Future Licensing — Preserves your right to negotiate a paid license for your tools/frameworks separately. Good.
+
+§8.11 Change of Control — If Project Green gets acquired, you can exit within 15 days of notice. Acquirer can't weaponize the NDA against you.
+
+§3.8 Advisory Scope Clarification — Specialized technical work beyond periodic advisory guidance triggers separate compensation negotiation. Prevents scope creep.
+
+All 3 "before signing" items from the v3 review resolved:
+
+Exhibit A Item #3 "[Reserved]" — struck ✓
+Exhibit C payment terms — Net 30 from invoice ✓
+Mediation-first clause — added as §8.1A ✓
+⚠️ Items to Review Before Signing
+1. §3.2 — "use of or reference to" (tightened personal time carve-out)
+
+Mike changed "without direct use of work product" to "without use of or reference to." This is framed as closing a loophole, but it's a meaningful tightening against you. Under this language, if you even reference Company materials while developing something on your own time — even briefly, even for comparison — that work could lose carve-out protection.
+
+Concern: You're a cybersecurity expert. You will naturally think about Project Green's security architecture when doing independent security work. "Reference to" is vague enough to capture that.
+
+Suggested fix: Push for "without substantial use of or reference to" — adding the word "substantial" brings it in line with the conceptual derivatives standard used elsewhere in the agreement.
+
+2. §2.12 — AI/ML Prohibition
+
+Prohibits consumer-grade AI unless under an enterprise agreement that "prohibits use of input data for model training." Mike frames this as mutual protection, which it is. But practically:
+
+Claude API (Anthropic API with privacy settings) — likely qualifies as enterprise ✓
+ChatGPT free/Plus — banned ✗
+GitHub Copilot enterprise — likely qualifies ✓
+Concern: The definition of "consumer-grade" vs. "enterprise" is undefined. You use AI tools extensively. If you're using Claude through an API under a standard API agreement (not consumer app), is that "enterprise"? The clause doesn't specify.
+
+Suggested fix: Add a sentence: "For the avoidance of doubt, AI services accessed through documented API agreements that include data processing terms prohibiting training on customer data shall be deemed enterprise agreements for purposes of this Section."
+
+3. §5 — Conflict Consent for Exhibit C-Adjacent Work
+
+Mike added: if you develop or sell something "substantially similar to deliverables you created for the Company under Exhibit C," you need their prior written consent (not unreasonably withheld).
+
+Exhibit C deliverables are: (1) security/compliance framework research, (2) AI game theory legal analysis.
+
+Concern: CyberKit v2 is already listed in Exhibit A as your pre-existing IP. But what about future security framework products you build independently? Could they argue those are "substantially similar" to the Exhibit C security research and require consent?
+
+Suggested fix: Add an explicit carve-out: "This consent requirement does not apply to Pre-Existing IP listed in Exhibit A or to products and services developed by Knutsen that are derived from or extend such Pre-Existing IP."
+
+4. §8.1B — Jury Trial Waiver (caps, buried in general provisions)
+
+This is written in all-caps as required for enforceability. Courts can enforce contractual jury waivers. For a technical IP/confidentiality dispute, a bench trial (judge only) is arguably better for you anyway — but this is a constitutional right you're waiving. Make sure you're consciously accepting this, not just skimming past it.
+
+Action: Conscious accept or reject — not a redline per se, just a significant waiver you should acknowledge.
